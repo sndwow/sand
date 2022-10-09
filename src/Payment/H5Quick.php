@@ -1,17 +1,17 @@
 <?php
 
-namespace Xyu\Sand\Payment;
+namespace Sndwow\Sand\Payment;
 
-use Xyu\Sand\Contract\AbstractGateway;
-use Xyu\Sand\Exception\BusinessException;
-use Xyu\Sand\Exception\SandException;
+use Sndwow\Sand\Contract\AbstractGateway;
+use Sndwow\Sand\Exception\BusinessException;
+use Sndwow\Sand\Exception\SandException;
 
 /**
  * H5银行卡快捷支付
  */
 class H5Quick extends AbstractGateway
 {
-
+    
     public function orderCreate(array $body)
     {
         try {

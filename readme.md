@@ -20,8 +20,7 @@ php artisan vendor:publish
 ```
 
 ```php
-Hyperf  调用：
-$app = sand_pay()->wechat_mini->orderCreate([]);
 fpm框架 调用：
-$app = sand($config)->wechat_mini->orderCreate([]);
+$app = new \Sndwow\Sand\SandApp($config);
+$app->wechat_mini->orderCreate([]);
 ```

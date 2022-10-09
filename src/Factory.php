@@ -1,15 +1,15 @@
 <?php
 
-namespace Xyu\Sand;
+namespace Sndwow\Sand;
 
-use Xyu\Sand\Exception\SandAppException;
+use Sndwow\Sand\Exception\SandAppException;
 
 class Factory
 {
     protected $config;
-
+    
     protected $drivers;
-
+    
     public function __construct($config)
     {
         $this->config = $config;

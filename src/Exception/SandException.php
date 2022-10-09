@@ -1,6 +1,6 @@
 <?php
 
-namespace Xyu\Sand\Exception;
+namespace Sndwow\Sand\Exception;
 
 abstract class SandException extends \RuntimeException
 {

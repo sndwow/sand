@@ -1,12 +1,11 @@
 <?php
 
-namespace Xyu\Sand\Support;
+namespace Sndwow\Sand\Support;
 
-use Xyu\Sand\Exception\AesException;
+use Sndwow\Sand\Exception\AesException;
 
 class AES
 {
-
     // 私钥加签
     public static function sign(string $plainText, string $pkey)
     {

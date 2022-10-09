@@ -1,13 +1,13 @@
 <?php
 
-namespace Xyu\Sand\Traits;
+namespace Sndwow\Sand\Traits;
 
 use GuzzleHttp\Client;
-use Xyu\Sand\Exception\BusinessException;
+use Sndwow\Sand\Exception\BusinessException;
 
 trait HttpRequests
 {
-
+    
     /**
      * @param array $data
      * @return mixed

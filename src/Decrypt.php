@@ -1,13 +1,13 @@
 <?php
 
-namespace Xyu\Sand;
+namespace Sndwow\Sand;
 
-use Xyu\Sand\Support\AES;
+use Sndwow\Sand\Support\AES;
 
 class Decrypt
 {
     protected $app;
-
+    
     public function __construct(SandApp $app)
     {
         $this->app = $app;

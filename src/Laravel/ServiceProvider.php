@@ -1,11 +1,11 @@
 <?php
 
-namespace Xyu\Sand\Laravel;
+namespace Sndwow\Sand\Laravel;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Laravel\Lumen\Application;
-use Xyu\Sand\Factory;
-use Xyu\Sand\SandApp;
+use Sndwow\Sand\Factory;
+use Sndwow\Sand\SandApp;
 
 /**
  * Class ServiceProvider

@@ -1,17 +1,17 @@
 <?php
 
-namespace Xyu\Sand\Payment;
+namespace Sndwow\Sand\Payment;
 
-use Xyu\Sand\Contract\AbstractGateway;
-use Xyu\Sand\Exception\BusinessException;
-use Xyu\Sand\Exception\SandException;
+use Sndwow\Sand\Contract\AbstractGateway;
+use Sndwow\Sand\Exception\BusinessException;
+use Sndwow\Sand\Exception\SandException;
 
 /**
  * 银联（聚合码）正扫
  */
 class UnionPayCode extends AbstractGateway
 {
-
+    
     public function orderCreate(array $body)
     {
         try {

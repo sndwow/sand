@@ -1,6 +1,6 @@
 <?php
 
-namespace Xyu\Sand\Exception;
+namespace Sndwow\Sand\Exception;
 
 class SandAppException extends SandException
 {

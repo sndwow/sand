@@ -1,10 +1,10 @@
 <?php
 
-namespace Xyu\Sand\Payment\v2;
+namespace Sndwow\Sand\Payment\v2;
 
-use Xyu\Sand\Contract\AbstractGateway;
-use Xyu\Sand\Exception\BusinessException;
-use Xyu\Sand\Exception\SandException;
+use Sndwow\Sand\Contract\AbstractGateway;
+use Sndwow\Sand\Exception\BusinessException;
+use Sndwow\Sand\Exception\SandException;
 
 /**
  * H5 一键快捷

@@ -1,40 +1,40 @@
 <?php
 
-namespace Xyu\Sand;
+namespace Sndwow\Sand;
 
 use Hanson\Foundation\Http;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use Xyu\Sand\Payment\Alipay;
-use Xyu\Sand\Payment\AppH5;
-use Xyu\Sand\Payment\BackQuickPay;
-use Xyu\Sand\Payment\BankB2b;
-use Xyu\Sand\Payment\BankB2c;
-use Xyu\Sand\Payment\H5Quick;
-use Xyu\Sand\Payment\JdPay;
-use Xyu\Sand\Payment\Pc;
-use Xyu\Sand\Payment\QuickPay;
-use Xyu\Sand\Payment\SandCode;
-use Xyu\Sand\Payment\UnionPay;
-use Xyu\Sand\Payment\UnionPayCode;
-use Xyu\Sand\Payment\UnionSdkPay;
-use Xyu\Sand\Payment\v2\H5alipay;
-use Xyu\Sand\Payment\v2\H5alipayCode;
-use Xyu\Sand\Payment\v2\H5cloud;
-use Xyu\Sand\Payment\v2\H5et;
-use Xyu\Sand\Payment\v2\H5fastPay;
-use Xyu\Sand\Payment\v2\H5qrcode;
-use Xyu\Sand\Payment\v2\H5quickToPup;
-use Xyu\Sand\Payment\v2\H5sandQrcode;
-use Xyu\Sand\Payment\v2\H5unionPay;
-use Xyu\Sand\Payment\v2\H5wechatOfficialPay;
-use Xyu\Sand\Payment\Wechat;
-use Xyu\Sand\Payment\WechatMini;
-use Xyu\Sand\Payment\WechatOfficial;
+use Sndwow\Sand\Payment\Alipay;
+use Sndwow\Sand\Payment\AppH5;
+use Sndwow\Sand\Payment\BackQuickPay;
+use Sndwow\Sand\Payment\BankB2b;
+use Sndwow\Sand\Payment\BankB2c;
+use Sndwow\Sand\Payment\H5Quick;
+use Sndwow\Sand\Payment\JdPay;
+use Sndwow\Sand\Payment\Pc;
+use Sndwow\Sand\Payment\QuickPay;
+use Sndwow\Sand\Payment\SandCode;
+use Sndwow\Sand\Payment\UnionPay;
+use Sndwow\Sand\Payment\UnionPayCode;
+use Sndwow\Sand\Payment\UnionSdkPay;
+use Sndwow\Sand\Payment\v2\H5alipay;
+use Sndwow\Sand\Payment\v2\H5alipayCode;
+use Sndwow\Sand\Payment\v2\H5cloud;
+use Sndwow\Sand\Payment\v2\H5et;
+use Sndwow\Sand\Payment\v2\H5fastPay;
+use Sndwow\Sand\Payment\v2\H5qrcode;
+use Sndwow\Sand\Payment\v2\H5quickToPup;
+use Sndwow\Sand\Payment\v2\H5sandQrcode;
+use Sndwow\Sand\Payment\v2\H5unionPay;
+use Sndwow\Sand\Payment\v2\H5wechatOfficialPay;
+use Sndwow\Sand\Payment\Wechat;
+use Sndwow\Sand\Payment\WechatMini;
+use Sndwow\Sand\Payment\WechatOfficial;
 
 class ServiceProvider implements ServiceProviderInterface
 {
-
+    
     public function register(Container $pimple)
     {
         $pimple['http'] = function (SandApp $app) {

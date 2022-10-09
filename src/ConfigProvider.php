@@ -1,10 +1,10 @@
 <?php
 
-namespace Xyu\Sand;
+namespace Sndwow\Sand;
 
 class ConfigProvider
 {
-    public function __invoke(): array
+    public function __invoke():array
     {
         return [
             // 合并到  config/autoload/dependencies.php 文件
