@@ -5,7 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "xyu",
+            "name": "sndwow",
             "email": "727884134@qq.com"
         }
     ],
@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Xyu\\Sand\\": "src/"
+            "sndwow\\Sand\\": "src/"
         },
         "files": [
             "src/Support/helper.php"
@@ -39,11 +39,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Xyu\\Sand\\Laravel\\ServiceProvider"
+                "sndwow\\Sand\\Laravel\\ServiceProvider"
             ]
         },
         "hyperf": {
-            "config": "Xyu\\Sand\\ConfigProvider"
+            "config": "sndwow\\Sand\\ConfigProvider"
         }
     }
 }
