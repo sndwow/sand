@@ -18,10 +18,7 @@
     "autoload": {
         "psr-4": {
             "Sndwow\\Sand\\": "src/"
-        },
-        "files": [
-            "src/Support/helper.php"
-        ]
+        }
     },
     "extra": {
         "laravel": {
