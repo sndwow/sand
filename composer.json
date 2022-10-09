@@ -1,0 +1,49 @@
+{
+    "name": "xyu/sand",
+    "description": "简单的杉德sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xyu",
+            "email": "727884134@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "composer/ca-bundle": "^1.3",
+        "hanson/foundation-sdk": "^5.0"
+    },
+    "require-dev": {
+        "hyperf/utils": "~2.2.0|~3.0.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "suggest": {
+        "hyperf/guzzle": "~2.2.0|~3.0.0",
+        "hyperf/di": "~2.2.0|~3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xyu\\Sand\\": "src/"
+        },
+        "files": [
+            "src/Support/helper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xyu\\Sand\\Laravel\\ServiceProvider"
+            ]
+        },
+        "hyperf": {
+            "config": "Xyu\\Sand\\ConfigProvider"
+        }
+    }
+}
